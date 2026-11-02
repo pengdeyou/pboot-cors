@@ -1,0 +1,31 @@
+[project]
+name = "pboot-cors"
+version = "1.0.0"
+description = "Cross Origin Resource Sharing (CORS) extension for Pboot."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+maintainers = [{name = "pboot-org"}]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Web Environment",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+    "Typing :: Typed",
+]
+requires-python = ">=3.11"
+dependencies = [
+    "pboot>=3.2.0",
+]
+
+[build-system]
+requires = ["flit_core>=3.12,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.module]
+name = "pboot_cors"
+
+[tool.flit.sdist]
+include = ["tests/"]
